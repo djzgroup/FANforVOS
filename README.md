@@ -10,7 +10,7 @@ Semi-supervised video object segmentation (VOS) has obtained significant progres
 ## Network Architecture
 We construct the model as a Siamese encoder-decoder structure which can efficiently handle four inputs and produce a segmentation mask. 
 The network consists of two encoders with shared parameters, a global convolution block, and a decoder. The designed network is fully convolutional, which can handle arbitrary input size and generate a sharp output mask. Given a reference frame with the ground-truth mask, the goal of our method is to automatically segment the target object through the entire video sequence. The key idea of our method is to exploit the annotated reference frame and the current frame with the previous mask estimation to a deep network. The network detects the target object by matching the appearance at the reference frame and the current frame. Meanwhile,  the previous mask is tracked by referencing the previous target mask in the current frame. The architecture of our network is shown as follows,
-<img src="https://github.com/djzgroup/RSforWordTranslation/blob/master/network.jpg" width="800">
+<img src="https://github.com/djzgroup/FANforVOS/blob/master/network.jpg" width="800">
 
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61802355.
